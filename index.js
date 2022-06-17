@@ -1,9 +1,9 @@
-function isPalindrome(palindromeWord) {
+function isPalindrome(word) {
   // Write your algorithm here
-  let array = palindromeWord.split("")
+  let array = word.split("")
   let reversedArray = array.reverse()
   let reversedWord = reversedArray.join("")
-  if (palindromeWord == reversedWord){
+  if (word == reversedWord){
     return true;
   } else {
     return false;
