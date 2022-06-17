@@ -1,11 +1,25 @@
-function isPalindrome(word) {
+function isPalindrome(palindromeWord) {
   // Write your algorithm here
+  let array = palindromeWord.split("")
+  let reversedArray = array.reverse()
+  let reversedWord = reversedArray.join("")
+  if (palindromeWord == reversedWord){
+    return true;
+  } else {
+    return false;
+  }
 }
+isPalindrome('abba')
+isPalindrome('racecar')
+
 
 /* 
   Add your pseudocode here
-*/
-
+ create a variable string to hold the words
+ reverse the created word string
+  call an if statement to compare the initial word and the reversed on
+  if the words match's return true if not return false.
+*/ 
 /*
   Add written explanation of your solution here
 */
